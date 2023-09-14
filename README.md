@@ -1,8 +1,9 @@
 # Random
-Generador random de opciones 
+Tired of wasting time making a choose on what to do?
+Well Randomly is the perfect tool to help you, just put your options and let that technology decides for you
 # Instrucciones
 Escribe en la terminal
 ```
-python random_generator.py
+python randomly.py
 ```
-Luego escribe cuantas opciones son y ponlas y listo disfruta tu sabia decision
+Then write your options and click "choose" and enjoy your wise option
