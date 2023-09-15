@@ -1,7 +1,7 @@
 # Random Python App
-Tired of wasting time making a choose on what to do? 
+Tired of wasting time making a choice on what to do? 
 
-Well Randomly is the perfect tool to help you, just put your options and let that technology decides for you
+Well, Randomly is the perfect tool to help you. Just input your options and let that technology decides for you
 
 # Requirements
 Kivy 
