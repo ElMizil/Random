@@ -12,9 +12,9 @@ pip install kivy
 # Instrucciones
 Write the next line in a terminal
 ```
-python randomly.py
+python main.py
 ```
-Then write your options and click "choose" and enjoy your wise decision
+Then enjoy the capacity of letting a machine control your life
 
 # Future of the App
 Soon there would be an option to create custom lists of choices and let you save them to choose anytime you want
