@@ -5,20 +5,14 @@ from kivymd.app import MDApp
 from kivymd.uix.menu import MDDropdownMenu
 from kivy.storage.jsonstore import JsonStore
 from kivymd.uix.dialog import MDDialog
-<<<<<<< HEAD
-=======
 from kivymd.uix.selectioncontrol import MDCheckbox
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
 from kivymd.uix.label import MDLabel
 from kivymd.uix.textfield import MDTextField
 from kivymd.uix.button import MDFlatButton
 from kivymd.uix.button import MDIconButton
-<<<<<<< HEAD
 from kivymd.uix.scrollview import MDScrollView
 from kivy.uix.boxlayout import BoxLayout
 from kivy.graphics import Color, Rectangle
-=======
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
 
 class MDScreen(MDApp):
 
@@ -55,11 +49,9 @@ class MDScreen(MDApp):
             self.title = selected_item
             self.root.ids.elist_title.text = self.title
             option = store.get(selected_item)["items"]
-<<<<<<< HEAD
             self.actualizar_lista(option)
             
             
-=======
             try:
                 self.layout.clear_widgets()
                 #self.root.ids.el_layout.remove_widget(self.layout)
@@ -80,7 +72,6 @@ class MDScreen(MDApp):
                 self.layout.add_widget(icon_button)
                 self.layout.add_widget(icon_button2)
                 self.root.ids.el_layout.add_widget(self.layout)
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
 
         if self.drop.caller.text == self.root.ids.delete_button.text:
             self.dialog = MDDialog(
@@ -102,7 +93,6 @@ class MDScreen(MDApp):
             )
             self.dialog.open()
 
-<<<<<<< HEAD
     def actualizar_lista(self,option):
         self.root.ids.el_layout.clear_widgets()
         print(self.root.ids.el_layout.children)
@@ -126,13 +116,10 @@ class MDScreen(MDApp):
             self.root.ids.el_layout.add_widget(self.layout)
         print(self.root.ids.el_layout.children)
 
-=======
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
     def delete_list(self,lista):
         print(lista)
         store = JsonStore('lists.json')
         store.delete(lista)
-<<<<<<< HEAD
 
     def delete_element(self,instance):
         self.eid = instance.id[4:]
@@ -143,8 +130,6 @@ class MDScreen(MDApp):
         data['items'] = my_list
         store.put(self.title, **data)
         self.actualizar_lista(my_list)
-=======
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
             
     def edit_element(self,instance):
         self.eid = instance.id[4:]
@@ -187,7 +172,6 @@ class MDScreen(MDApp):
                 break
         data['items'] = my_list
         store.put(self.title, **data)
-<<<<<<< HEAD
         self.edit_dialog.dismiss()
         self.actualizar_lista(my_list)
 
@@ -199,8 +183,6 @@ class MDScreen(MDApp):
         store.put(self.title, items=data)
         self.root.ids.new_option.text = ""
         self.actualizar_lista(data)
-=======
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
         
         
             

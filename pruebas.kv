@@ -97,11 +97,8 @@ MDScreen:
                     text: "Edit list: Option to edit a list and add or delete options"
 
                 MDLabel:
-<<<<<<< HEAD
                     text: "Delete list: Option to delete a list"
-=======
                     text: "Check list: Option to check a list and display the options and some more data about the list"
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
 
                 MDBoxLayout:
                     orientation: "horizontal"
@@ -124,29 +121,23 @@ MDScreen:
                         line_color: "yellow"
                         text_color: "black"
                         markup: True
-<<<<<<< HEAD
                         on_release: app.menu_open(1)
 
                     MDRaisedButton:
                         id: delete_button
                         text: "[b]Delete list[/b]"
-=======
                         on_release: app.menu_open()
 
                     MDRaisedButton:
                         id: check_button
                         text: "[b]Check list[/b]"
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
                         size_hint_x: 0.3 
                         size_hint_y: 0.5
                         line_color: "yellow"
                         text_color: "black"
                         markup: True
-<<<<<<< HEAD
                         on_release: app.menu_open(2)
-=======
                         on_release: app.menu_open()
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
 
         Screen:
             name: "ajustes"
@@ -169,7 +160,6 @@ MDScreen:
             id: el
             name: "edit_list"
             MDBoxLayout:
-<<<<<<< HEAD
                 id: elist_layout
                 orientation: "vertical"
                 md_bg_color: "#1E1E15"
@@ -245,16 +235,6 @@ MDScreen:
                         Line:
                             rectangle: self.x, self.y, self.width, self.height
 
-
-
-                    
-
-=======
-                orientation: "vertical"
-                md_bg_color: "#1E1E15"
-                adaptative_width : True
-                adaptative_height : True
-
             MDLabel:
                 id: elist_title
                 font_style: "H5"
@@ -266,7 +246,6 @@ MDScreen:
             MDLabel:
                 id: elist_options
                 halign: "center"
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
 
         Screen:
             id: lc
@@ -332,27 +311,18 @@ MDScreen:
                 text: "Random"
                 on_release: 
                     screen_manager.current = "inicio"
-<<<<<<< HEAD
                     nav_drawer.set_state("close")
-=======
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
 
             OneLineListItem:
                 text: "Lists"
                 on_release: 
                     screen_manager.current = "listas"
-<<<<<<< HEAD
                     nav_drawer.set_state("close")
-=======
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
 
             OneLineListItem:
                 text: "Settings"
                 on_release:
                     screen_manager.current = "ajustes"
-<<<<<<< HEAD
                     nav_drawer.set_state("close")
-=======
->>>>>>> fef73a1a5c6ea3db4b7810d26ec97221417a2eac
     
 
