@@ -59,17 +59,6 @@ MDScreen:
                             Line:
                                 rectangle: self.x, self.y, self.width, self.height
 
-                
-                MDTextField:
-                    hint_text: "Write options here"
-                    helper_text: "Separate each option by a space"
-                    helper_text_mode: "persistent"
-
-                MDBoxLayout:
-                    orientation: "vertical"
-
-                    MDTextButton:
-                        text: "Add option"
         Screen:
             name: "listas"
             MDBoxLayout:
@@ -98,7 +87,6 @@ MDScreen:
 
                 MDLabel:
                     text: "Delete list: Option to delete a list"
-                    text: "Check list: Option to check a list and display the options and some more data about the list"
 
                 MDBoxLayout:
                     orientation: "horizontal"
@@ -126,17 +114,11 @@ MDScreen:
                     MDRaisedButton:
                         id: delete_button
                         text: "[b]Delete list[/b]"
-                        on_release: app.menu_open()
-
-                    MDRaisedButton:
-                        id: check_button
-                        text: "[b]Check list[/b]"
                         size_hint_x: 0.3 
                         size_hint_y: 0.5
                         line_color: "yellow"
                         text_color: "black"
                         markup: True
-                        on_release: app.menu_open(2)
                         on_release: app.menu_open()
 
         Screen:
@@ -234,18 +216,6 @@ MDScreen:
                             rgba: 0, 0, 1, 1  # Set the border color (red)
                         Line:
                             rectangle: self.x, self.y, self.width, self.height
-
-            MDLabel:
-                id: elist_title
-                font_style: "H5"
-                halign: "center"
-                size_hint_y: None
-                height: "48dp"
-                
-
-            MDLabel:
-                id: elist_options
-                halign: "center"
 
         Screen:
             id: lc
