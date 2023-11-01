@@ -4,6 +4,7 @@ Tired of wasting time making a choice on what to do?
 Well, Randomly is the perfect tool to help you. Just input your options and let that technology decides for you
 
 # Requirements
+Python
 Kivy 
 ```
 pip install kivy
