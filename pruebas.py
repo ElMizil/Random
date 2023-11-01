@@ -18,7 +18,6 @@ class MDScreen(MDApp):
 
     def menu_open(self,btn):
         store = JsonStore('lists.json')
-        print("Hola mundo")
         keys = store.keys()
         menu_items_dict = [
             {"text": item, "viewclass": "OneLineListItem", "on_release": lambda x=item: self.menu_item_click(x)}
