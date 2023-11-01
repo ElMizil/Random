@@ -5,6 +5,7 @@ Well, Randomly is the perfect tool to help you. Just input your options and let 
 
 # Requirements
 Python
+
 Kivy 
 ```
 pip install kivy
